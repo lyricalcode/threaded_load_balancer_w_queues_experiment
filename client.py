@@ -4,6 +4,10 @@ import random
 import string
 import sys
 
+if len(sys.argv) < 2:
+    print('USAGE: python client.py <client id>', file=sys.stderr)
+    sys.exit()
+
 client = int(sys.argv[1])
 
 server_netinfo = ('127.0.0.1', 8000)
